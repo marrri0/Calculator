@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/loader.css">
+        <link rel="icon" href="./images/calc.png">
+        <title>Calculator</title>
+    </head>
+    <body>
+        <div class="audios">
+            <audio src="./sound/Did Your Mother Drop You On Your Head When You Were a Baby.mp3" class="sound-1"></audio>
+            <audio src="./sound/yes-science.mp3" class="sound-2"></audio>
+            <audio src="./sound/chnawa l7al.mp3" class="sound-3"></audio>
+            <audio src="./sound/keyboard click.mp3" class="keyboard-click"></audio>
+            <audio src="./sound/iphone notification.mp3" class="note-audio"></audio>
+        </div>
+        <div class="loader-page">
+            <h1 class="header">iCalculate</h1>
+            <div class="loading-bar"></div>
+            <div class="footer">2023 ©️ Marrri0</div>
+        </div>
+        <div style="display: none;" class="phone-container">
+            <div class="container">
+                <div class="notification">
+                    <div class="notification-content">
+                      <img src='./images/calc.png' class="notification-icon">
+                      <div class="notification-message">
+                        <h3>Calculator</h3>
+                        <p>What are you doing ?</p>
+                     </div>
+                    </div>
+                </div>
+                <div class="output-container">
+                    <p class="output-para"></p>
+                </div>
+                <div class="calc-btn">
+                    <div class="clear-plus-minus-modulus-division"> 
+                        <button class="operator clear" value="AC">AC</button>
+                        <button class=" operator plus-minus" value="+/-">+/-</button>
+                        <button class="operator modulus" value="%">%</button>
+                        <button class="operator division" value="÷">÷</button>
+                    </div>
+                    <div class="seven-eight-nine-x">
+                        <button class="number seven" value="7">7</button>
+                        <button class="number eight" value="8">8</button>
+                        <button class="number nine" value="9">9</button>
+                        <button class="operator multiplication" value="×">×</button>
+                    </div>
+                    <div class="four-five-six-minus">
+                        <button class="number four" value="4">4</button>
+                        <button class="number five" value="5">5</button>
+                        <button class="number six" value="6">6</button>
+                        <button class="operator substraction" value="-">-</button>
+                    </div>
+                    <div class="one-two-three-plus">
+                        <button class="number one" value="1">1</button>
+                        <button class="number two" value="2">2</button>
+                        <button class="number three" value="3">3</button>
+                        <button class="operator plus" value="+">+</button>
+                    </div>
+                    <div class="zero-comma-equal">
+                        <button class="number zero" value="0">0</button>
+                        <button class="operator comma" value=",">,</button>
+                        <button class="operator equal" value="=">=</button>
+                    </div>
+                </div>
+                <div class="swipe-up-notch">
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./script/script.js"></script>
+</html>

@@ -1,0 +1,52 @@
+@font-face {
+    font-family: aesthetic;
+    src: url(../fonts/Aesthetic\ Romance.ttf);
+}
+
+.loader-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    margin-top: 5rem;
+    gap: 10rem;
+}
+
+.header {
+    font-family: aesthetic;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    mix-blend-mode: difference;
+}
+
+.loading-bar {
+    width: 200px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    border-radius: 3px;
+    mix-blend-mode: difference;
+}
+
+.loading-bar:before {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 100%;
+    background-color: #ffffff;
+    mix-blend-mode: difference;
+    animation: loading 7s linear infinite;
+}
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 50%;
+    }
+    100% {
+        width: 100%;
+    }
+}
