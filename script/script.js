@@ -93,11 +93,17 @@ function addDecimal() {
 
 function handleOperator(op) {
     if (operator !== null ) {
-        calculate();
-    };
-    lastInput = currentInput;
-    currentInput = '';
-    operator = op;
+        if (currentInput !== '') {
+            calculate();
+            lastInput = currentInput;
+            currentInput = '';            
+        }
+        operator = op;
+    } else {
+        lastInput = currentInput;
+        currentInput = '';
+        operator = op;
+    }
 }
 
 function clear() {
