@@ -119,7 +119,7 @@ function percentage() {
 };
 
 function updateDisplay() {
-    output.textContent = currentInput || operator;
+    output.textContent = currentInput || lastInput;
 };
 
 // Below just some entertaining functions to sweeten up the app a little.
